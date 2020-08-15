@@ -6,7 +6,7 @@ from OOPsDemo import Calculator
 class Child_Implement(Calculator):
     num2 = 200
 
-    def __init__(self):
+    def __init__(self):  # we have to call the Parent constructor, if it is not defaulted
         Calculator.__init__(self,2 , 10)
 
     def getCompleteData(self):
