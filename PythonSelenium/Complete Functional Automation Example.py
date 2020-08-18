@@ -1,5 +1,15 @@
 # Explicit wait- Target to wait for specific object
 # pause the test for few seconds using Time class
+
+# 3 test cases
+# 1. Validate whether products selected in Page 1
+# are showing in Page 2 check page
+
+# 2 Verify if Price Decreases on Discount
+
+# 3 Verify if sum of products in checkout page matches with Total Amount
+# 4 Verify if Search functionality in home page is working, put ber and see 3 products are x,y z
+
 import time
 
 from selenium import webdriver
@@ -34,7 +44,7 @@ for veg in veggies:
 
 print(veg_list)
 
-assert veg_list == items_list
+assert veg_list == items_list # Test Case number 1
 
 originalAmount = driver.find_element_by_css_selector(".discountAmt").text
 driver.find_element_by_class_name("promoCode").send_keys("rahulshettyacademy")
@@ -42,7 +52,7 @@ driver.find_element_by_css_selector(".promoBtn").click()
 
 wait.until(expected_conditions.presence_of_element_located((By.CSS_SELECTOR, "span.promoInfo")))
 discountedAmount = driver.find_element_by_css_selector(".discountAmt").text
-assert float(discountedAmount) < float(originalAmount)
+assert float(discountedAmount) < float(originalAmount) # Test Case Number 2
 
 print(driver.find_element_by_css_selector("span.promoInfo").text)
 
@@ -52,5 +62,5 @@ for amount in amounts:
     total = total + int(amount.text)
 
 totalAmount = int(driver.find_element_by_css_selector(".totAmt").text)
-assert total == totalAmount
+assert total == totalAmount # Test Case Number 3
 driver.close()
