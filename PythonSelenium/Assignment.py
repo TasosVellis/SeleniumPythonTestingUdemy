@@ -41,3 +41,28 @@ sort_final_list = sorted(final_list)
 print(sort_final_list)
 assert sort_assignment_list == sort_final_list
 driver.quit()
+
+# Code from other student
+#     import time
+#     from selenium import webdriver
+#     driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
+#     driver.get("https://rahulshettyacademy.com/seleniumPractise/#/")
+#     driver.find_element_by_css_selector("input.search-keyword").send_keys("ca")
+#     list = ["Cauliflower - 1 Kg","Capsicum","Carrot - 1 Kg","Cashews - 1 Kg"]
+#     list1 = []
+#     list2 = []
+#     time.sleep(4)
+#     Veggies = driver.find_elements_by_xpath("//h4")
+#     for veg in Veggies:
+#         list1.append(veg.text)
+#     print(list1)
+#     i = 0
+#     count = len(list1)
+#     while i < count:
+#         for item in list:
+#             if list1[i] in item:
+#                 list2.append(list1[i])
+#                 break
+#         i = i+1
+#
+#     assert list1 == list2
