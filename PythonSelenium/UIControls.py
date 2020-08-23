@@ -17,3 +17,10 @@ assert radiobuttons[2].is_selected()
 
 # Handling Javascript and Java Pop ups
 
+assert driver.find_element_by_css_selector("#displayed-text").is_displayed()
+
+driver.find_element_by_id("hide-textbox").click()
+
+assert not driver.find_element_by_css_selector("#displayed-text").is_displayed()
+
+driver.close()
