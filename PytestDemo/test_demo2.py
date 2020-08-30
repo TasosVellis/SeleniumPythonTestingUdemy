@@ -4,8 +4,11 @@
 
 
 def test_first_program():
-    print("Hello")
+    msg = "Hello"
+    assert msg == "Hi", "Test failed cause strings don't match"
 
 
 def test_second_program():
-    print("Good Morning")
+    a = 4
+    b = 6
+    assert a + 2 == 6, "Addition does not match"
