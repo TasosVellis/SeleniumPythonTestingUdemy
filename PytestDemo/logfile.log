@@ -1,8 +1,13 @@
-2020-08-31 11:39:01,300 : CRITICAL : PytestDemo.test_logging : Critical Issue
-2020-08-31 11:39:12,563 : DEBUG : PytestDemo.test_logging : A debug statement is executed
-2020-08-31 11:39:12,563 : INFO : PytestDemo.test_logging : Information statement
-2020-08-31 11:39:12,563 : WARNING : PytestDemo.test_logging : Something is in warning mode
-2020-08-31 11:39:12,563 : ERROR : PytestDemo.test_logging : A Major error has happened
-2020-08-31 11:39:12,563 : CRITICAL : PytestDemo.test_logging : Critical Issue
-2020-08-31 11:55:57,542 : INFO : PytestDemo.BaseClass : Tasos
-2020-08-31 11:55:57,542 : INFO : PytestDemo.BaseClass : tasos.com
+2020-08-31 22:35:46,035 : INFO : PytestDemo.BaseClass : Tasos
+2020-08-31 22:35:46,035 : INFO : PytestDemo.BaseClass : tasos.com
+2020-08-31 22:37:35,849 : INFO : PytestDemo.BaseClass : Tasos
+2020-08-31 22:37:35,849 : INFO : PytestDemo.BaseClass : tasos.com
+2020-08-31 22:41:43,716 : INFO : test_editProfile : Tasos
+2020-08-31 22:41:43,716 : INFO : test_editProfile : tasos.com
+2020-08-31 22:46:07,146 : INFO : test_editProfile : Tasos
+2020-08-31 22:46:07,146 : INFO : test_editProfile : tasos.com
+2020-08-31 22:46:07,146 : DEBUG : PytestDemo.test_logging : A debug statement is executed
+2020-08-31 22:46:07,146 : INFO : PytestDemo.test_logging : Information statement
+2020-08-31 22:46:07,146 : WARNING : PytestDemo.test_logging : Something is in warning mode
+2020-08-31 22:46:07,146 : ERROR : PytestDemo.test_logging : A Major error has happened
+2020-08-31 22:46:07,146 : CRITICAL : PytestDemo.test_logging : Critical Issue
