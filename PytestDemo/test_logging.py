@@ -1,17 +1,18 @@
 import logging
 
-logger = logging.getLogger(__name__)
 
+def test_loggingDemo():
+    logger = logging.getLogger(__name__)
 
+    fileHandler = logging.FileHandler("logfile.log")
+    formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
+    fileHandler.setFormatter(formatter)
 
-fileHandler = logging.FileHandler("logfile.log")
+    logger.addHandler(fileHandler)  # filehandler object
 
-logger.addHandler(fileHandler) # filehandler object
-
-logger.debug("A debug statement is executed")
-logger.info("Information statement")
-logger.warning("Something is in warning mode")
-logger.error("A Major error has happened")
-logger.critical("Critical Issue")
-
-
+    logger.setLevel(logging.DEBUG)
+    logger.debug("A debug statement is executed")
+    logger.info("Information statement")
+    logger.warning("Something is in warning mode")
+    logger.error("A Major error has happened")
+    logger.critical("Critical Issue")
